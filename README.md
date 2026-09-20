@@ -1,4 +1,4 @@
-## Minecraft Blocks YouTube Comment Formatter
+# Minecraft Blocks YouTube Comment Formatter
 A client-side utility built for content creators, developers, and Minecraft enthusiasts. This lightweight, single-page application allows you to type, format, and preview text exactly as it appears when posted in a YouTube comment thread—all wrapped up in a pixel-perfect, custom-designed Minecraft block interface.
 ------------------------------
 ## 🎨 System Architecture & Interface Design
@@ -9,7 +9,8 @@ A client-side utility built for content creators, developers, and Minecraft enth
 * Fully Autonomous Layout Rendering: Built using strict functional scripting models to guarantee the code logic processes entirely client-side without layout leaks, third-party trackers, or network requirements.
 
 ------------------------------
-## 🛠️ Code Engine Core Components## 1. Granular Markdown Parser Matrix
+## 🛠️ Code Engine Core Components 
+### 1. Granular Markdown Parser Matrix
 The formatting engine translates YouTube's unique inline syntax wrappers on the fly. It utilizes text boundary matrices to safely interpret isolated or nested text weights without breaking your general structure:
 
 * *text* → Bold (<strong>)
@@ -17,29 +18,18 @@ The formatting engine translates YouTube's unique inline syntax wrappers on the 
 * -text- → Strikethrough (<del>)
 * Supports full string combinations such as *_-nested text-_* for multi-style layouts.
 
-## 2. Temporal Chronological Tracking
+### 2. Temporal Chronological Tracking
 An inline regular expression tracker automatically looks for dynamic time indicators (matching patterns like MM:SS or HH:MM:SS). It strips out the values and wraps them in interactive time anchors (.yt-timestamp), allowing you to accurately stage clickable timestamp highlights for video references (e.g., 12:34).
-## 3. Boundary Character Safeguard Engine
+### 3. Boundary Character Safeguard Engine
 Monitors the text string sizing boundaries in real time. Because YouTube imposes a strict 10,000-character ceiling on user threads, the tool tracks your usage count against the storage constraint and applies conditional formatting states to flag a bright red layout alert if you overflow the cap.
-## 4. Zero-Friction Target Clipboard Pipeline
+### 4. Zero-Friction Target Clipboard Pipeline
 Features a green, retro-button trigger linked to the modern browser navigator.clipboard framework. It packages the raw text exactly as typed (preserving formatting tokens) for safe execution to your clipboard space.
-------------------------------
-## 🚀 Instant Deployment Reference
-Because this application relies exclusively on standard front-end web technologies (HTML5, CSS3, and JavaScript), deployment takes seconds and is entirely free.
-## Deployment Method A: Drag & Drop via Netlify
-
-   1. Bundle your index.html file into a dedicated project folder.
-   2. Head over to the Netlify Drop panel in your browser dashboard.
-   3. Drag and drop your folder straight into the browser import box to get an active production URL instantly.
-
-## Deployment Method B: GitHub Pages Pipelines
-
-   1. Initialize a clean, public repository on your GitHub account.
-   2. Commit and push the index.html file right into your root production branch.
-   3. Open your project repository's Settings panel, locate the Pages menu on the sidebar, select your target branch (main or master), and save to provision your production URL.
-
 ------------------------------
 ## 📄 License & Asset Attributions
 
 * Interface Typography: Built using Google Web Fonts' open-source VT323 monospaced pixel typeface under the SIL Open Font License.
 * Vector Models: Custom inline data-encoded SVG assets are mapped explicitly within document structures to avoid external fetching latency.
+------------------------------
+## 🌐 Website Link
+
+* The website is available at `https://youtube-text-formatter.vercel.app`
